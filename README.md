@@ -1,51 +1,49 @@
 # Login System
-A simple Login & Registration system built with the MERN stack (MongoDB, Express, React, Node.js) using JSON Web Token (JWT) for authentication.
+<pre>A simple Login & Registration system built with the MERN stack (MongoDB, Express, React, Node.js) using JSON Web Token (JWT) for authentication.
 
----
-
-This project is created purely for learning purposes to understand how authentication works in a full-stack application.
+This project is created purely for learning purposes to understand how authentication works in a full-stack application.</pre>
 
 ---
 
 ## 🚀 Features
--✅ User Registration (Signup)
--✅ User Login (Signin)
--✅ Password hashing using bcrypt
--✅ JWT-based authentication
--✅ Protected routes (only accessible after login)
--✅ Landing page after successful login
--✅ Logout functionality
--✅ Simple and clean UI
+- ✅ User Registration (Signup)
+- ✅ User Login (Signin)
+- ✅ Password hashing using bcrypt
+- ✅ JWT-based authentication
+- ✅ Protected routes (only accessible after login)
+- ✅ Landing page after successful login
+- ✅ Logout functionality
+- ✅ Simple and clean UI
 
 ---
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-###Frontend:
+### Frontend:
 
--React.js (with Vite)
--Axios
--React Router DOM
+- React.js (with Vite)
+- Axios
+- React Router DOM
 
-###Backend:
+### Backend:
 
--Node.js
--Express.js
+- Node.js
+- Express.js
 
-###Database:
+### Database:
 
--MongoDB (Mongoose)
+- MongoDB (Mongoose)
 
-###Authentication:
+### Authentication:
 
--JSON Web Token (JWT)
--bcrypt.js
+- JSON Web Token (JWT)
+- bcrypt.js
 
 ---
 
-##📁 Project Structure
+## 📁 Project Structure
 
-<pre>```mern-jwt-auth/
+<pre>mern-jwt-auth/
 │
 ├── backend/
 │   ├── models/
@@ -73,17 +71,17 @@ This project is created purely for learning purposes to understand how authentic
 │
 ├── .env
 ├── .gitignore
-└── README.md```</pre>
+└── README.md</pre>
 
 ---
 
-##⚙️ Environment Variables
+## ⚙️ Environment Variables
 
 `Create a .env file in the backend folder:`
 
--PORT=8080
--MONGO_URI=mongodb://127.0.0.1:27017/login
--JWT_SECRET=your_secret_key
+- PORT=8080
+- MONGO_URI=mongodb://127.0.0.1:27017/login
+- JWT_SECRET=your_secret_key
 
 ---
 
@@ -93,8 +91,8 @@ This project is created purely for learning purposes to understand how authentic
 - cd mern-jwt-auth
 ### 2️⃣ Setup Backend
 - cd backend
--npm install
--npm run dev
+- npm install
+- npm run dev
 ### 3️⃣ Setup Frontend
 - cd frontend
 - npm install
@@ -103,22 +101,22 @@ This project is created purely for learning purposes to understand how authentic
 ---
 ## 🔐 How Authentication Works
 
--User registers → Password is hashed using bcrypt and stored in MongoDB
--User logs in → Server verifies credentials
--If valid → JWT token is generated and sent to client
--Client stores token (localStorage / cookies)
--Token is sent in headers for protected routes
--Middleware verifies token before granting access
+- User registers → Password is hashed using bcrypt and stored in MongoDB
+- User logs in → Server verifies credentials
+- If valid → JWT token is generated and sent to client
+- Client stores token (localStorage / cookies)
+- Token is sent in headers for protected routes
+- Middleware verifies token before granting access
 
 
 ---
 
 ## 📌 API Endpoints
 ### 🔑 Auth Routes
--Method	Endpoint	Description
--POST	/api/register	Register user
--POST	/api/login	Login user
--GET	/api/profile	Protected route
+- Method	Endpoint	Description
+- POST	/api/register	Register user
+- POST	/api/login	Login user
+- GET	/api/profile	Protected route
 
 
 ---
@@ -131,22 +129,22 @@ This project is created purely for learning purposes to understand how authentic
 
 ## ⚠️ Disclaimer
 
--This project is built for learning purposes only.
--It does not include advanced security practices like:
+- This project is built for learning purposes only.
+- It does not include advanced security practices like:
 
-    -Refresh tokens
-    -Rate limiting
-    -Production-level validation
+    - Refresh tokens
+    - Rate limiting
+    - Production-level validation
 
 
 ---
 
 ## 💡 Future Improvements
--Add refresh token system
--Implement role-based access control
--Add email verification
--Use cookies instead of localStorage
--Improve UI/UX
+- Add refresh token system
+- Implement role-based access control
+- Add email verification
+- Use cookies instead of localStorage
+- Improve UI/UX
 
 
 --
